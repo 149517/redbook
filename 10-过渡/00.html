@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡动画</title>
+    <style>
+        div{
+            margin: 50px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: #e090b0;
+            transition:all 1s linear 0s;
+        }
+        .box:hover{
+            background: #47e4d2;
+            width: 400px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: #e090b0;
+            transition:1s linear 0s;
+            transition-property: background;
+        }
+        .box2:hover{
+            background: #47e4d2;
+            width: 400px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: #e090b0;
+            transition:all linear 0s;
+
+            transition-duration: 3s;
+
+        }
+        .box3:hover{
+            background: #47e4d2;
+            width: 400px;
+        }
+        .box4{
+            width: 800px;
+            height: 500px;
+        }
+        .li{
+            width: 150px;
+            height: 100px;
+            float: left;
+            margin: 20px;
+            background: #2673d5;
+            transition: all 1s;
+        }
+        .li:nth-child(2){
+            background: #7b918e;
+            transition-timing-function: ease;
+        }
+        .li:nth-child(3){
+            background: #47e4d2;
+            transition-timing-function: linear;
+        }
+        .li:nth-child(4){
+            transition-timing-function: ease-in;
+        }
+        .li:nth-child(5){
+            transition-timing-function: ease-in-out;
+        }
+        .li:hover{
+            background: #e090b0;
+            height: 400px;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background: #e090b0;
+            transition:all 3s linear;
+
+            transition-delay: 2s;
+
+        }
+        .box5:hover{
+            background: #47e4d2;
+            width: 400px;
+        }
+        .box6{
+            width: 600px;
+            height: 500px;
+        }
+        .li2{
+            width: 200px;
+            height: 100px;
+            float: left;
+            margin: 30px;
+            background: #47e4d2;
+        }
+        .li2:nth-child(2){
+            transition: all 1s linear;
+        }
+        .li2:nth-child(2):hover{
+            height: 300px;
+            background: #e090b0;
+        }
+        .li2:nth-child(3):hover{
+            height: 300px;
+            background: #6bb0c7;
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>示例1</span>
+    </div>
+<div class="box2">
+    <span>示例2</span>
+</div>
+<div class="box3">
+    <span>示例3</span>
+</div>
+<div class="box4">
+    <div>示例4</div>
+    <div class="li">ease</div>
+    <div class="li">linear</div>
+    <div class="li">ease-in</div>
+    <div class="li">ease-in-out</div>
+</div>
+
+<div class="box5">
+    <span>示例5</span>
+</div>
+<div class="box6">
+    <div>示例6</div>
+    <div class="li2">普通属性</div>
+    <div class="li2">:hover{}内</div>
+</div>
+</body>
+</html>
