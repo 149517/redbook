@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+        }
+
+        .box2 {
+            width: 800px;
+            height: 120px;
+        }
+
+        .box2 img {
+            width: 200px;
+            height: 110px;
+        }
+
+        .box2:nth-child(1) {
+            text-align: left;
+            border-radius: 20px;
+        }
+
+        .box2:nth-child(2) {
+            text-align: center;
+        }
+
+        .box2:nth-child(3) {
+            text-align: right;
+        }
+
+        .box3 {
+            width: 400px;
+
+        }
+
+        .box3 img {
+            width: 200px;
+            height: 110px;
+        }
+
+        .img1 {
+            vertical-align: top;
+        }
+
+        .img2 {
+            vertical-align: middle;
+        }
+
+        .img3 {
+            vertical-align: baseline;
+        }
+
+        .img4{
+            vertical-align: bottom;
+        }
+
+        .box4{
+            width: 400px;
+        }
+        .box4 img{
+            float: right;
+        }
+    </style>
+
+
+</head>
+<body>
+<!--<div class="box">-->
+<!--    &lt;!&ndash;    <img src="img.jpg" alt="img" width="601px" height="338px">&ndash;&gt;-->
+<!--</div>-->
+<!--<div class="box2"><img src="img.jpg" alt=""></div>-->
+<!--<div class="box2"><img src="img.jpg" alt=""></div>-->
+<!--<div class="box2"><img src="img.jpg" alt=""></div>-->
+
+<div class="box3">
+    <hr/>
+    <img class="img1" src="img2.jpg" alt="">图片的对其方式top
+    <hr/>
+    <img class="img2" src="img2.jpg" alt="">图片的对其方式middle
+    <hr/>
+    <img class="img3" src="img2.jpg" alt="">图片的对其方式baseline
+    <hr/>
+    <img class="img4" src="img2.jpg" alt="">图片的对其方式bottom
+    <hr/>
+</div>
+<div class="box4">
+    <img src="img.jpg" alt="" width="200px" height="110px">
+    <p>图片的文字环绕是根据浮动来实现的，在前面有提到过，要实现图文的环绕只需设置图片和文字中的一个元素添加浮动即可。</p>
+
+</div>
+</body>
+</html>
